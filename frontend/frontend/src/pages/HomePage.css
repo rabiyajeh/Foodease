@@ -1,0 +1,290 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* BODY */
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f53b57;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .navbar-links a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .sign-in-btn {
+    background-color: #fff;
+    color: #f53b57;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  /* HERO SECTION */
+  .hero-section {
+    position: relative;
+    background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .order-now-btn {
+    background-color: #f53b57;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .hero-search {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .hero-search input {
+    padding: 0.6rem;
+    border-radius: 4px;
+    border: none;
+    width: 200px;
+  }
+  
+  .search-btn {
+    background-color: #f53b57;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  /* FEATURED DISHES */
+  .featured-dishes {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .featured-dishes h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .dishes-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .dish-card {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .dish-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dish-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .price {
+    font-size: 0.9rem;
+    color: #f53b57;
+    font-weight: bold;
+  }
+  
+  /* LIMITED TIME OFFER */
+  .limited-offer {
+    background-color: #fff4f4;
+    color: #f53b57;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* WHY CHOOSE US */
+  .why-choose-us {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    width: 200px;
+    text-align: center;
+  }
+  
+  .feature-card img {
+    width: 60px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* ABOUT US */
+  .about-us {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  
+  .about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .learn-more-btn {
+    margin-top: 1rem;
+    background-color: #f53b57;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .testimonial-card {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 280px;
+    min-height: 100px;
+  }
+  
+  .testimonial-card p {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* FOOTER */
+  .footer {
+    background-color: #f0f0f0;
+    padding: 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-left h3 {
+    color: #f53b57;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-middle, .footer-right {
+    text-align: right;
+  }
+  
+  .footer-note {
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 400px;
+    }
+    .dishes-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+    .features {
+      flex-direction: column;
+    }
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-middle, .footer-right {
+      text-align: center;
+    }
+  }
+  
