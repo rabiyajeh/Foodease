@@ -9,7 +9,8 @@ import OrderHistory from "./pages/OrderHistory";
 import AdminDashboard from "./admin/AdminDashboard";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import AuthModal from "./components/AuthModal"; // Import Auth Modal
+import AuthModal from "./components/AuthModal"; 
+import CheckoutPage from "./pages/CheckoutPage";// Import Auth Modal
 
 const PrivateRoute = ({ children }) => {
   const token = localStorage.getItem("token");
@@ -55,7 +56,7 @@ function App() {
         <Route path="/cart" element={<PrivateRoute><CartPage /></PrivateRoute>} />
         <Route path="/orders" element={<PrivateRoute><OrderHistory /></PrivateRoute>} />
         <Route path="/admin/dashboard" element={<AdminRoute><AdminDashboard /></AdminRoute>} />
-
+        <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 

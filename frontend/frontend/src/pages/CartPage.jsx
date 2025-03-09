@@ -30,7 +30,7 @@ const CartPage = () => {
   };
 
   const handleCheckout = () => {
-    alert("Proceeding to checkout. Total: $" + calculateTotal());
+    navigate("/checkout");
   };
 
   return (
@@ -90,9 +90,9 @@ const CartPage = () => {
                 <h2 className="text-2xl font-semibold">Total: ${calculateTotal()}</h2>
                 <button
                   onClick={handleCheckout}
-                  className="mt-4 bg-red-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-red-600"
+                  className="mt-4 bg-green-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600"
                 >
-                  Order
+                  Proceed to Checkout
                 </button>
               </div>
             </div>
